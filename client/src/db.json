@@ -1,0 +1,145 @@
+{
+	"albums": [
+		{
+			"name": "Cars",
+			"id":1,
+			"cover":"https://images.unsplash.com/photo-1486421646134-73244de0b53c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e63de212c6366b8709343b0bfba3b641&auto=format&fit=crop&w=2100&q=80"
+		},
+		{
+			"name": "Music",
+			"id": 2,
+			"cover":"https://images.unsplash.com/photo-1432250767374-ee19cba37b52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=320e6dd212886c125f672b73ad2ee08d&auto=format&fit=crop&w=1818&q=80"
+		},
+		{
+			"name": "Outdoors",
+			"id": 3,
+			"cover":"https://images.unsplash.com/photo-1467358895199-cd5d1847a7e4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eeb7eedb1ef706e4f6b64e1b5c310e00&auto=format&fit=crop&w=1867&q=80"
+		},
+		{
+			"name": "Sports",
+			"id": 4,
+			"cover":"https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72939cf399379dc3301a87f3800c090f&auto=format&fit=crop&w=2098&q=80"
+		},
+		{
+			"name": "Liquor",
+			"id": 5,
+			"cover":"https://images.unsplash.com/photo-1457382713369-161d1d986f54?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fda89895a219c9dd1335b8cd81e690b1&auto=format&fit=crop&w=1867&q=80"
+		},
+		{
+			"name": "Icons",
+			"id": 6,
+			"cover":"http://energy106.ca/wp-content/uploads/2018/01/kanye-west-tidal-portrait-2015-billboard-1548.jpg"
+		}
+	],
+
+	"pictures": [
+		{
+			"id": 1,
+			"albumId": 1,
+			"image":"https://images.unsplash.com/photo-1517994112540-009c47ea476b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b956e29e6b87c8d08f7f8f6fa57e7e57&auto=format&fit=crop&w=2162&q=80",
+			"name": "Red Car"
+		},
+		{
+			"id": 2,
+			"albumId": 1,
+			"image":"https://images.unsplash.com/photo-1458188793901-87f9ec7bd399?ixlib=rb-0.3.5&s=6f6b1eae97efc292fd3224e8faf37397&auto=format&fit=crop&w=800&q=60",
+			"name": "Blue Car"
+		},
+		{
+			"id": 3,
+			"albumId": 1,
+			"image":"https://images.unsplash.com/photo-1518300171942-838d0eaf6713?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1bed0109abaaeea9d26b8f4930c5751f&auto=format&fit=crop&w=2100&q=80",
+			"name": "Yee-Haw Car"
+		},
+		{
+			"id": 4,
+			"albumId": 2,
+			"image":"http://s3.amazonaws.com/hiphopdx-production/2016/04/Lil-Uzi-Vert-Hands-On-Face.jpg",
+			"name": "Lil Uzi Vert"
+		},
+		{
+			"id": 5,
+			"albumId": 2,
+			"image":"http://www.fashionably-early.com/wp-content/uploads/2018/01/yung-bans.jpg",
+			"name": "Yung Bans"
+		},
+		{
+			"id": 6,
+			"albumId": 2,
+			"image":"http://media.kanyetothe.com/uploaded_avatars/avatar_1325297_1472589495.png",
+			"name": "Young Thug"
+		},
+		{
+			"id": 7,
+			"albumId": 3,
+			"image":"https://images.unsplash.com/photo-1493787039806-2edcbe808750?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ecc2e2075b0fea567faf5d4c98bde3c&auto=format&fit=crop&w=2100&q=80",
+			"name": "Yee-Haw Activity"
+		},
+		{
+			"id": 8,
+			"albumId": 3,
+			"image":"https://images.unsplash.com/photo-1489207500636-35bf80f2091c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24d85ddc8e33331365cea17f258fb3bb&auto=format&fit=crop&w=2100&q=80",
+			"name": "Fake Outdoors"
+		},
+		{
+			"id": 9,
+			"albumId": 3,
+			"image":"https://wallpapertag.com/wallpaper/full/8/c/e/410081-download-free-minecraft-background-hd-3200x1800-free-download.jpg",
+			"name": "Real Outdoors"
+		},
+		{
+			"id": 10,
+			"albumId": 4,
+			"image":"https://cavsnation.com/wp-content/uploads/2017/04/leBron-Dunk.jpg",
+			"name": "LeGoat"
+		},
+		{
+			"id": 11,
+			"albumId": 4,
+			"image":"https://mk0slamonlinensgt39k.kinstacdn.com/wp-content/uploads/2018/02/lonzo_ball_starting_point_guard.jpg",
+			"name": "Second Best NBA Player"
+		},
+		{
+			"id": 12,
+			"albumId": 4,
+			"image":"https://cdn.nba.net/nba-drupal-prod/2017-12/john-wall-iso-home-uni.jpg",
+			"name": "John Wall"
+		},
+		{
+			"id": 13,
+			"albumId": 5,
+			"image":"https://pikfly.com/images/products/140/36705.jpg",
+			"name": "The Best Beer"
+		},
+		{
+			"id": 14,
+			"albumId": 5,
+			"image":"https://www.alux.com/wp-content/uploads/2014/04/Most-Expensive-Whiskey-In-The-World-Isabella%E2%80%99s-Islay-6.2-million-1.jpg",
+			"name": "Whiskey"
+		},
+		{
+			"id": 15,
+			"albumId": 5,
+			"image":"https://www.haskells.com/media/catalog/product/cache/1/image/816x1200/040ec09b1e35df139433887a97daa66f/3/4/344552_0_1_1.jpg",
+			"name": "You've Been Iced"
+		},
+		{
+			"id": 16,
+			"albumId": 6,
+			"image":"https://thebasketballsociety.files.wordpress.com/2015/06/5-rings.jpg",
+			"name": "Mr. Five Rings"
+		},
+		{
+			"id": 17,
+			"albumId": 6,
+			"image":"https://e3.365dm.com/17/10/750x563/skynews-elon-musk_4121744.jpg?20171007053233",
+			"name": "The Boy Elon"
+		},
+		{
+			"id": 18,
+			"albumId": 6,
+			"image":"https://images.complex.com/complex/image/upload/c_fill,f_auto,g_faces:auto,h_900,q_auto,w_900/wu77nbentixyvtrcsxlp.jpg",
+			"name": "Cam'ron"
+		}
+	]
+}
