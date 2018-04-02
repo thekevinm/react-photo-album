@@ -1,50 +1,41 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import axios from 'axios'
 import './Albums.css'
+import {getAlbum} from './albumAction'
+import {connect} from 'react-redux'
 
 class Albums extends Component {
-	state ={
-		pictures: [],
-		albumName: []
-	}
 	componentDidMount() {
 		const id = this.props.match.params.id
-		axios.get(`http://localhost:3001/albums/${id}?_embed=pictures`).then(resp => {
-			this.setState({
-				pictures: resp.data.pictures,
-				albumName: resp.data.name
-			})
-		})
+		
+		getAlbum(id)
 	}
+
 	componentWillReceiveProps(newprops) {
 		const id = newprops.match.params.id
-		axios.get(`http://localhost:3001/albums/${id}?_embed=pictures`).then(resp => {
-		this.setState({
-			pictures: resp.data.pictures,
-			albumName: resp.data.name
-			})
-		})
+		if (this.props.match.params.id !== id) {
+			getAlbum(id)	
+		}
 	}
 	render(){
 		return(
 			<div>
 			
 			<header>
-				<h1>{this.state.albumName}</h1>
+				<h1>{this.props.albumName}</h1>
 			</header>
 
 			<nav className="side">
-				// <Link to={"/"} style={{textDecoration: 'none'}}>Home</Link>
-				// <Link to={"/albums/1"} style={{textDecoration: 'none'}}>Cars</Link>
-				// <Link to={"/albums/2"} style={{textDecoration: 'none'}}>Music</Link>
-				// <Link to={"/albums/3"} style={{textDecoration: 'none'}}>Outdoors</Link>
-				// <Link to={"/albums/4"} style={{textDecoration: 'none'}}>Sports</Link>
-				// <Link to={"/albums/5"} style={{textDecoration: 'none'}}>Liquor</Link>
-				// <Link to={"/albums/6"} style={{textDecoration: 'none'}}>Icons</Link>
+				//<Link to={"/"} style={{textDecoration: 'none'}}>Home</Link>
+				//<Link to={"/albums/1"} style={{textDecoration: 'none'}}>Cars</Link>
+				//<Link to={"/albums/2"} style={{textDecoration: 'none'}}>Music</Link>
+				//<Link to={"/albums/3"} style={{textDecoration: 'none'}}>Outdoors</Link>
+				//<Link to={"/albums/4"} style={{textDecoration: 'none'}}>Sports</Link>
+				//<Link to={"/albums/5"} style={{textDecoration: 'none'}}>Liquor</Link>
+				//<Link to={"/albums/6"} style={{textDecoration: 'none'}}>Icons</Link>
 			</nav>
 			
-			{this.state.pictures.map(pics => (
+			{this.props.pictures.map(pics => (
 			<Link key={'image' + pics.id} to={"/photo/" + pics.id}>
 			<div className="albumsContainer">
 			<img src={pics.image} />
@@ -62,4 +53,11 @@ class Albums extends Component {
 	}
 }
 
-export default Albums
+function mapStateToProps(state){
+	return {
+		pictures: state.currentAlbum.pictures,
+		albumName: state.currentAlbum.albumName
+	}
+}
+
+export default connect(mapStateToProps)(Albums)

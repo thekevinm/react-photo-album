@@ -1,18 +1,12 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import './Home.css'
-import axios from 'axios'
+import {getAlbums} from './albumAction'
+import {connect} from 'react-redux'
 
 class Home extends Component {
-	state ={
-		albums: []
-	}
 	componentDidMount() {
-		axios.get('http://localhost:3001/albums').then(resp => {
-			this.setState({
-				albums: resp.data
-			})
-		})
+		getAlbums()
 	}
 
 	render() {
@@ -23,7 +17,7 @@ class Home extends Component {
 					<h1>My Albums</h1>
 				</header>
 
-				{this.state.albums.map(pic => (
+				{this.props.albums.map(pic => (
 					<div key={'albums' + pic.id} className="albumContainer">
 					<Link to={`/albums/${pic.id}`} style={{textDecoration: 'none'}}>
 						<img src={pic.cover} />
@@ -41,4 +35,10 @@ class Home extends Component {
 	}
 }
 
-export default Home
+function mapStateToProps(state) {
+	return {
+		albums: state.albums
+	}
+}
+
+export default connect(mapStateToProps)(Home)
